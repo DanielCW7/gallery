@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- plugin information preceeds stylesheet -->
+    <link rel="stylesheet" href="css/css/lightbox.css"> <!-- lightbox CSS -->
+    <link rel="stylesheet" href="css/styles.css">       <!-- base CSS file -->
+    <title> Photo Gallery </title>
+</head>
+
+<header>
+    <nav>
+        <input type="search"  id="search" placeholder="search" name="search">
+    </nav>
+</header>
+
+<body>
+    <main>
+        <!-- photos go here (3x4) total = 12 -->
+        <!-- wrapped the anchor tags around the photo divs, and made the anchor link to the blown up image -->
+        <!-- captions need to be wrapped in "data-title" inside the link -->
+        <!-- the photoAlbum class is only used for the search bar function by looping though captions to search for matches-->
+
+        <a href="images/01.jpg" class="photoAlbum" data-lightbox="gallery" data-title="I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
+            <div id="photo0">
+            <img src="images/thumbnails/01.jpg">
+            </div>
+            </a>
+
+        <a href="images/02.jpg" class="photoAlbum" data-lightbox="gallery" data-title="The lake was so calm today. We had a great view of the snow on the mountains from here.">
+            <div id="photo1">
+            <img src="images/thumbnails/02.jpg">
+            </div>
+            </a>
+
+        <a href="images/03.jpg" class="photoAlbum" data-lightbox="gallery" data-title="I hiked to the top of the mountain and got this picture of the canyon and trees below.">
+            <div id="photo2">
+            <img src="images/thumbnails/03.jpg">
+            </div>
+            </a> 
+            
+        <a href="images/04.jpg" class="photoAlbum" data-lightbox="gallery" data-title="It was amazing to see an iceberg up close, it was so cold but didn’t snow today.">
+            <div id="photo3">
+            <img src="images/thumbnails/04.jpg">
+            </div>
+            </a>
+
+        <a href="images/05.jpg" class="photoAlbum" data-lightbox="gallery" data-title="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.">
+            <div id="photo4">
+            <img src="images/thumbnails/05.jpg">
+            </div>
+            </a>
+
+        <a href="images/06.jpg" class="photoAlbum" data-lightbox="gallery" data-title="Fall is coming, I love when the leaves on the trees start to change color.">
+            <div id="photo5">
+            <img src="images/thumbnails/06.jpg">
+            </div>
+            </a>
+
+        <a href="images/07.jpg" class="photoAlbum" data-lightbox="gallery" data-title="I drove past this plantation yesterday, everything is so green!">
+            <div id="photo6">
+            <img src="images/thumbnails/07.jpg">
+            </div>
+            </a>
+
+        <a href="images/08.jpg" class="photoAlbum" data-lightbox="gallery" data-title="My summer vacation to the Oregon Coast. I love the sandy dunes!">
+            <div id="photo7">
+            <img src="images/thumbnails/08.jpg">
+            </div>
+            </a>
+
+        <a href="images/09.jpg" class="photoAlbum" data-lightbox="gallery" data-title="We enjoyed a quiet stroll down this countryside lane.">
+            <div id="photo8">
+            <img src="images/thumbnails/09.jpg">
+            </div>
+            </a>
+
+        <a href="images/10.jpg" class="photoAlbum" data-lightbox="gallery" data-title="Sunset at the coast! The sky turned a lovely shade of orange.">
+            <div id="photo9">
+            <img src="images/thumbnails/10.jpg">
+            </div>
+            </a>
+
+        <a href="images/11.jpg" class="photoAlbum" data-lightbox="gallery" data-title="I did a tour of a cave today and the view of the landscape below was breathtaking.">
+            <div id="photo10">
+            <img src="images/thumbnails/11.jpg">
+            </div>
+            </a>    
+ 
+        <a href="images/12.jpg" class="photoAlbum" data-lightbox="gallery" data-title="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.">
+            <div id="photo11">
+            <img src="images/thumbnails/12.jpg">
+            </div>
+            </a>
+    </main>
+
+
+    <script src="js/js/lightbox-plus-jquery.js"></script> <!-- jQuery & lightbox -->
+    <script src="js/base.js"></script> <!-- my Js file -->
+
+</body>
+</html>
+<!-- weird class names and declarations are requirements of the lightbox plugin/jQuery library. 
+      https://lokeshdhakar.com/projects/lightbox2/#getting-started  -->
